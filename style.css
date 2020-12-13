@@ -180,3 +180,51 @@ flex-direction: column;
     transition: all .7s ease-in-out;
     z-index: 201;
 }
+@keyframes scaleUp {
+    0% {
+        transform : scale(0.2)
+    }
+    25% {
+        transform : scale(0.8)
+    }
+    50% {
+        transform : scale(1.2)
+    }
+    75% {
+        transform : scale(0.8)
+    }
+    100% {
+        transform : scale(1)
+    }
+}
+.rpc {
+    text-align: right;
+    padding: 6px 15px;
+    font-size: 1.5rem;
+    color: var(--linear);
+}
+.rpc span {
+    cursor: pointer;
+}
+.rps {
+    padding: 20px;
+}
+.rps i {
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.rptf textarea,
+.rptf input {
+    width: 80%;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 7px;
+    resize: none;
+    min-height: 80px;
+    font-family: serif;
+    font-size: .9rem;
+    font-weight: 100;
+    color: #777;
+}
