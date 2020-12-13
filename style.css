@@ -32,7 +32,61 @@ body {
     color: #8f8f8f;
     margin-bottom: .625rem;
 }
+.rating-review table,
+.rating-review td {
+    font-size: .8125rem;
+    text-align: center;
+}
+.rating-review td {
+    padding: 1rem;
+    width: 33.3%;
 
+}
+.tri {
+    border-bottom: 1px solid #e2e2e2;
+    padding: 12px;
+}
+.rnd {
+  color: var(--primary-color);  
+  font-size: 2.4rem;
+  font-family: sans-serif;
+}
+.tri .pdt-rate {
+height: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.rating-stars {
+    position: relative;
+    vertical-align: baseline;
+    color: #b9b9b9;
+    line-height: 10px;
+    float: left;
+}
+.grey-stars {
+    height: 100%;
 
-
+}
+.filled-stars {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height:100%;
+    overflow: hidden;
+    columns: var(--primary-color);
+}
+.filled-stars::before,
+.grey-stars::before {
+    content: "\2605 \2605 \2605 \2605 \2605";
+    font-size: 19px;
+    line-height: 18px;
+    letter-spacing: 0;
+}
+.tri .filled-stars::before,
+.tri .grey-stars::before {
+    font-size: 20px;
+    line-height: 23px;
+}
 
