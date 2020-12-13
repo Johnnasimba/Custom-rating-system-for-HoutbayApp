@@ -1,3 +1,21 @@
-body {
-    background-color: whitesmoke
+:root {
+    --primary-color : #f7bf17;
+    --linear: #ef5350;
+    --white: #fff;
+    --r-color: #d63031;
+    --light-b: #686de0;
 }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: var(--linear)
+}
+
+
+
