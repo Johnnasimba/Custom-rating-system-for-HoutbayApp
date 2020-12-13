@@ -96,7 +96,7 @@
                             </tr>
                         </tbody>
                     </table>
-                    <div class="review-model">
+                    <div class="review-model" style="display:none">
                         <div class="review-bg"></div>
                         <div class="rpc">
                             <span>
