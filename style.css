@@ -14,8 +14,25 @@
 
 
 body {
-    background-color: var(--linear)
+    background-color: #1c1c1c;
 }
+
+.rating-review {
+    height: 100%;
+    width: 85%;
+    margin: 80px auto;
+    background-color: #fefefe;
+}
+.rating-review table {
+    width: 100px;
+    margin: 0;
+    font-family: sans-serif;
+    border-collapse: collapse ;
+    border-spacing: 0;
+    color: #8f8f8f;
+    margin-bottom: .625rem;
+}
+
 
 
 
