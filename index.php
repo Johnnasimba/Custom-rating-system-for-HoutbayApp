@@ -16,6 +16,7 @@
                     <table class="table table-light">
                         <tbody>
                             <tr>
+                                <!-- First table data -->
                                 <td>
                                     <div class="rnb rvl">
                                         <h3>1.5/5.0</h3>
@@ -23,8 +24,10 @@
                                     <div class="pdt-rate">
                                         <div class="pro-rating">
                                             <div class="clearfix rating mart8">
-                                                <div class="grey-stars">
+                                                <div class="rating-stars">
+                                                    <div class="grey-stars"></div>
                                                     <div class="filled-stars" style="width: 60%;"></div>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
@@ -33,58 +36,51 @@
                                         <p class="rars">No Reviews</p>
                                     </div>
                                 </td>
+
+                                <!-- Second table data -->
                                 <td>
                                     <div class="rpb">
+
                                         <div class="rnpb">
-                                            <label for="">
-                                                5
-                                                <i class="fa fa-star" aria-hidden="true"></i>
-                                            </label>
+                                            <label> 5 <i class="fa fa-star" ></i>  </label>
                                             <div class="ropb">
                                                 <div class="ripd" style="width: 20%;"></div>
                                             </div>
                                             <div class="label">(1)</div>
                                         </div>
+
                                         <div class="rnpb">
-                                            <label for="">
-                                                4
-                                                <i class="fa fa-star" aria-hidden="true"></i>
-                                            </label>
+                                            <label for=""> 4<i class="fa fa-star"></i> </label>
                                             <div class="ropb">
                                                 <div class="ripd" style="width: 50%;"></div>
                                             </div>
                                             <div class="label">(1)</div>
                                         </div>
+
                                         <div class="rnpb">
-                                            <label for="">
-                                                3
-                                                <i class="fa fa-star" aria-hidden="true"></i>
-                                            </label>
+                                            <label for=""> 3 <i class="fa fa-star" ></i> </label>
                                             <div class="ropb">
                                                 <div class="ripd" style="width: 80%;"></div>
                                             </div>
                                             <div class="label">(15)</div>
                                         </div>
+
                                         <div class="rnpb">
-                                            <label for="">
-                                                2
-                                                <i class="fa fa-star" aria-hidden="true"></i>
-                                            </label>
+                                            <label for=""> 2 <i class="fa fa-star" ></i> </label>
                                             <div class="ropb">
                                                 <div class="ripd" style="width: 30%;"></div>
                                             </div>
                                             <div class="label">(11)</div>
                                         </div>
+
                                         <div class="rnpb">
-                                            <label for="">
-                                                1
-                                                <i class="fa fa-star" aria-hidden="true"></i>
-                                            </label>
+                                            <label for=""> 1 <i class="fa fa-star" aria-hidden="true"></i>     </label>
                                             <div class="ropb">
                                                 <div class="ripd" style="width: 40%;"></div>
                                             </div>
                                             <div class="label">(13)</div>
                                         </div>
+                                        
                                     </div>
                                 </td>
                                 <td>
@@ -98,45 +94,52 @@
                     </table>
                     <div class="review-model" style="display:none">
                         <div class="review-bg"></div>
-                        <div class="rpc">
-                            <span>
-                                <i class="fa fa-times" aria-hidden="true"></i>
-                            </span>
-                        </div>
-                        <div class="rps" align="center">
-                            <i class="fa fa-star" data-index="0" style="display: none;" aria-hidden="true"></i>
-                            <i class="fa fa-star" data-index="1" aria-hidden="true"></i>
-                            <i class="fa fa-star" data-index="2" aria-hidden="true"></i>
-                            <i class="fa fa-star" data-index="3" aria-hidden="true"></i>
-                            <i class="fa fa-star" data-index="4" aria-hidden="true"></i>
-                            <i class="fa fa-star" data-index="5" aria-hidden="true"></i>
-                        </div>
-                        <input type="hidden" value="" class="starRateV" />
-                        <input type="hidden" value="" class="rateDate" />
-                        <div class="rptf" align="center">
-                            <input type="text" class="rateName" placeholder="Enter your name.." />
-                        </div>
-                        <div class="rptf" align="center">
-                            <textarea name="" id="" class="rateMsg" placeholder="Describe your experience with this Applicant" cols="30" rows="10"></textarea>
-                        </div>
-                        <div class="rate-rror" align="center"></div>
-                        <div class="rpsb" align="center">
-                            <button class="rpbtn">Post Review</button>
+                        <div class="rmp">
+
+                            <div class="rpc">
+                                <span>
+                                    <i class="fa fa-times" ></i>
+                                </span>
+                            </div>
+                            <div class="rps" align="center">
+                                <i class="fa fa-star" data-index="0" style="display: none;" ></i>
+                                <i class="fa fa-star" data-index="1"></i>
+                                <i class="fa fa-star" data-index="2"></i>
+                                <i class="fa fa-star" data-index="3"></i>
+                                <i class="fa fa-star" data-index="4"></i>
+                                <i class="fa fa-star" data-index="5"></i>
+                            </div>
+                            <input type="hidden" value="" class="starRateV" />
+                            <input type="hidden" value="" class="rateDate" />
+                            <div class="rptf" align="center">
+                                <input type="text" class="raterName" placeholder="Enter your name..." />
+                            </div>
+                            <div class="rptf" align="center">
+                                <textarea name="" id="" class="rateMsg" placeholder="Describe your experience with this Applicant" cols="30" rows="10"></textarea>
+                            </div>
+                            <div class="rate-rror" align="center"></div>
+                            <div class="rpsb" align="center">
+                                <button class="rpbtn">Post Review</button>
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="bri">
-                    <div class="ucm">
+                    <div class="uscm">
                         <div class="uscm-secs">
+
                             <div class="us-img">
                                 <p>B</p>
                             </div>
+
                             <div class="uscms">
                                 <div class="us-rate">
                                     <div class="pdt-rate">
                                         <div class="pro-rating">
                                             <div class="clearfix rating mart8">
-                                                <div class="grey-stars">
+                                                <div class="rating-stars">
+                                                    <div class="grey-stars"> </div>
                                                     <div class="filled-stars" style="width: 60%;"></div>
                                                 </div>
                                             </div>
@@ -146,7 +149,7 @@
                                 <div class="us-cmt">
                                     <p>He is the best gardener</p>
                                 </div>
-                                <div class="us-rn">
+                                <div class="us-rm">
                                     <p>
                                         <i>
                                             <span class="cmnm">Bright</span> on
