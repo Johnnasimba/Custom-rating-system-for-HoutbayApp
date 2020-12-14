@@ -44,7 +44,7 @@
                                         <div class="rnpb">
                                             <label> 5 <i class="fa fa-star" ></i>  </label>
                                             <div class="ropb">
-                                                <div class="ripd" style="width: 20%;"></div>
+                                                <div class="ripb" style="width: 20%;"></div>
                                             </div>
                                             <div class="label">(1)</div>
                                         </div>
@@ -52,7 +52,7 @@
                                         <div class="rnpb">
                                             <label for=""> 4<i class="fa fa-star"></i> </label>
                                             <div class="ropb">
-                                                <div class="ripd" style="width: 50%;"></div>
+                                                <div class="ripb" style="width: 50%;"></div>
                                             </div>
                                             <div class="label">(1)</div>
                                         </div>
@@ -60,7 +60,7 @@
                                         <div class="rnpb">
                                             <label for=""> 3 <i class="fa fa-star" ></i> </label>
                                             <div class="ropb">
-                                                <div class="ripd" style="width: 80%;"></div>
+                                                <div class="ripb" style="width: 80%;"></div>
                                             </div>
                                             <div class="label">(15)</div>
                                         </div>
@@ -68,7 +68,7 @@
                                         <div class="rnpb">
                                             <label for=""> 2 <i class="fa fa-star" ></i> </label>
                                             <div class="ropb">
-                                                <div class="ripd" style="width: 30%;"></div>
+                                                <div class="ripb" style="width: 30%;"></div>
                                             </div>
                                             <div class="label">(11)</div>
                                         </div>
@@ -76,13 +76,14 @@
                                         <div class="rnpb">
                                             <label for=""> 1 <i class="fa fa-star" aria-hidden="true"></i>     </label>
                                             <div class="ropb">
-                                                <div class="ripd" style="width: 40%;"></div>
+                                                <div class="ripb" style="width: 40%;"></div>
                                             </div>
                                             <div class="label">(13)</div>
                                         </div>
                                         
                                     </div>
                                 </td>
+                                <!-- Third table data -->
                                 <td>
                                     <div class="rrb">
                                         <p>Please Review This Applicant</p>
@@ -92,6 +93,7 @@
                             </tr>
                         </tbody>
                     </table>
+                    
                     <div class="review-model" style="display:none">
                         <div class="review-bg"></div>
                         <div class="rmp">
