@@ -11,9 +11,9 @@
     </head>
     <body>
         <div class="container">
-            <div class="rating-review">
+            <section class="rating-review" id="ratingSection" >
                 <div class="tri table-flex">
-                    <table class="table table-light">
+                    <table>
                         <tbody>
                             <tr>
                                 <!-- First table data -->
@@ -23,10 +23,10 @@
                                     </div>
                                     <div class="pdt-rate">
                                         <div class="pro-rating">
-                                            <div class="clearfix rating mart8">
+                                            <div class="clearfix rating marT8">
                                                 <div class="rating-stars">
                                                     <div class="grey-stars"></div>
-                                                    <div class="filled-stars" style="width: 60%;"></div>
+                                                    <div class="filled-stars" style="width: 60%"></div>
                                                     
                                                 </div>
                                             </div>
@@ -44,41 +44,41 @@
                                         <div class="rnpb">
                                             <label> 5 <i class="fa fa-star" ></i>  </label>
                                             <div class="ropb">
-                                                <div class="ripb" style="width:20%"></div>
+                                                <div class="ripb" style="width:0%"></div>
                                             </div>
-                                            <div class="label">(1)</div>
+                                            <label>(0)</label>
                                         </div>
 
                                         <div class="rnpb">
                                             <label for=""> 4<i class="fa fa-star"></i> </label>
                                             <div class="ropb">
-                                                <div class="ripb" style="width:50%"></div>
+                                                <div class="ripb" style="width:60%"></div>
                                             </div>
-                                            <div class="label">(1)</div>
+                                            <label>(2)</label>
                                         </div>
 
                                         <div class="rnpb">
                                             <label for=""> 3 <i class="fa fa-star" ></i> </label>
                                             <div class="ropb">
-                                                <div class="ripb" style="width:80%"></div>
+                                                <div class="ripb" style="width:20%"></div>
                                             </div>
-                                            <div class="label">(15)</div>
+                                            <label>(1)</label>
                                         </div>
 
                                         <div class="rnpb">
                                             <label for=""> 2 <i class="fa fa-star" ></i> </label>
                                             <div class="ropb">
-                                                <div class="ripb" style="width:30%"></div>
+                                                <div class="ripb" style="width:20%"></div>
                                             </div>
-                                            <div class="label">(11)</div>
+                                            <label>(1)</label>
                                         </div>
 
                                         <div class="rnpb">
-                                            <label for=""> 1 <i class="fa fa-star" aria-hidden="true"></i>     </label>
+                                            <label for=""> 1 <i class="fa fa-star" ></i>     </label>
                                             <div class="ropb">
-                                                <div class="ripb" style="width:40%"></div>
+                                                <div class="ripb" style="width:0%"></div>
                                             </div>
-                                            <div class="label">(13)</div>
+                                            <label>(0)</label>
                                         </div>
                                         
                                     </div>
@@ -113,9 +113,11 @@
                             </div>
                             <input type="hidden" value="" class="starRateV" />
                             <input type="hidden" value="" class="rateDate" />
+
                             <div class="rptf" align="center">
                                 <input type="text" class="raterName" placeholder="Enter your name..." />
                             </div>
+
                             <div class="rptf" align="center">
                                 <textarea name="" id="" class="rateMsg" placeholder="Describe your experience with this Applicant" cols="30" rows="10"></textarea>
                             </div>
@@ -129,7 +131,7 @@
 
                 <div class="bri">
                     <div class="uscm">
-                        <div class="uscms-secs">
+                        <div class="uscm-secs">
 
                             <div class="us-img">
                                 <p>B</p>
@@ -139,10 +141,10 @@
                                 <div class="us-rate">
                                     <div class="pdt-rate">
                                         <div class="pro-rating">
-                                            <div class="clearfix rating mart8">
+                                            <div class="clearfix rating marT8">
                                                 <div class="rating-stars">
                                                     <div class="grey-stars"> </div>
-                                                    <div class="filled-stars" style="width: 60%;"></div>
+                                                    <div class="filled-stars" style="width: 60%"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -151,9 +153,9 @@
                                 <div class="us-cmt">
                                     <p>He is the best gardener</p>
                                 </div>
-                                <div class="us-rm">
+                                <div class="us-nm">
                                     <p>
-                                        <i>
+                                        <i>By
                                             <span class="cmnm">Bright</span> on
                                             <span class="cmdt"> 23 december, 2020</span>
                                         </i>
@@ -163,7 +165,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
     </body>
 </html>
