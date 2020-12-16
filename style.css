@@ -351,3 +351,16 @@ align-items: center;
     color: #888;
     font-family: "roboto", sans-serif;
 }
+
+@media only screen and (max-width: 760px)  {
+    table tr {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .rating-review td {
+        padding: 1rem;
+        width: 100%;
+    }
+}
