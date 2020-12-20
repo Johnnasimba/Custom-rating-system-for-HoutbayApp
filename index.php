@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/1936634b09.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
         <script src="script.js"></script>
         <link rel="stylesheet" href="style.css" />
         <title>Custom rating system for Houtbay App</title>
@@ -94,7 +94,7 @@
                         </tbody>
                     </table>
                     
-                    <div class="review-model" style="display:none">
+                    <div class="review-modal" style="display:none">
                         <div class="review-bg"></div>
                         <div class="rmp">
 
@@ -167,5 +167,6 @@
                 </div>
             </section>
         </div>
+       
     </body>
 </html>
