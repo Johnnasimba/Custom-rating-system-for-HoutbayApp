@@ -1,5 +1,6 @@
 var ratedIndex = -1;
-console.log("Iam working fine")
+
+
 
 function resetColors() {
     $(".rps  i").css("color", "#e2e2e2");
@@ -12,7 +13,7 @@ function setStars(max) {
 }
 $(document).ready(function () {
 
- alert("iam working fine")
+ 
     resetColors();
 
     $(".rps  i").mouseover(function () {
