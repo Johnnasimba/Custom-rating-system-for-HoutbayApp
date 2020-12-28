@@ -73,9 +73,9 @@ else {
                                         <div class="rnpb">
                                             <label> 5 <i class="fa fa-star" ></i>  </label>
                                             <div class="ropb">
-                                                <div class="ripb" style="width:0%"></div>
+                                                <div class="ripb" style="width:40%"></div>
                                             </div>
-                                            <label>(0)</label>
+                                            <label>(2)</label>
                                         </div>
 
                                         <div class="rnpb">
@@ -83,7 +83,7 @@ else {
                                             <div class="ropb">
                                                 <div class="ripb" style="width:60%"></div>
                                             </div>
-                                            <label>(2)</label>
+                                            <label>(3)</label>
                                         </div>
 
                                         <div class="rnpb">
@@ -105,9 +105,9 @@ else {
                                         <div class="rnpb">
                                             <label for=""> 1 <i class="fa fa-star" ></i>     </label>
                                             <div class="ropb">
-                                                <div class="ripb" style="width:0%"></div>
+                                                <div class="ripb" style="width:80%"></div>
                                             </div>
-                                            <label>(0)</label>
+                                            <label>(4)</label>
                                         </div>
                                         
                                     </div>
