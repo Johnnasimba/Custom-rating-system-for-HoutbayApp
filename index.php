@@ -1,3 +1,32 @@
+<?php  
+session_start();
+require "db.inc.php";
+
+$mydate = getdate(date('U'));
+$date = "$mydate[weekday], $mydate[month] $mydate[mday], $mydate[year]";
+
+$sqlr = $conn->query("SELECT id FROM rate");
+$numR = $sqlr->num_rows;
+
+
+$sqlr = $conn->query("SELECT SUM(userReview) AS total FROM rate");
+$rData = $sqlr->fetch_array();
+$total = $rData['total'];
+
+$avg = '';
+if($numR != 0) {
+    if(is_nan(round(($total / $numR), 1))) {
+        $avg = 0;
+    }
+    else {
+        $avg = round(($total / $numR), 1);
+    }
+}
+else {
+    $avg = 0;
+}
+    
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -19,21 +48,21 @@
                                 <!-- First table data -->
                                 <td>
                                     <div class="rnb rvl">
-                                        <h3>1.5/5.0</h3>
+                                        <h3><?php echo $avg; ?>/5.0</h3>
                                     </div>
                                     <div class="pdt-rate">
                                         <div class="pro-rating">
                                             <div class="clearfix rating marT8">
                                                 <div class="rating-stars">
                                                     <div class="grey-stars"></div>
-                                                    <div class="filled-stars" style="width: 60%"></div>
+                                                    <div class="filled-stars" style="width:<?php echo ($avg * 20) ?>%"></div>
                                                     
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="rnrn">
-                                        <p class="rars">No Reviews</p>
+                                        <p class="rars"> <?php if($numR == 0){echo "No";}else{echo $numR;}; ?> Reviews</p>
                                     </div>
                                 </td>
 
@@ -112,7 +141,7 @@
                                 <i class="fa fa-star" data-index="5"></i>
                             </div>
                             <input type="hidden" value="" class="starRateV" />
-                            <input type="hidden" value="" class="rateDate" />
+                            <input type="hidden" value="<?php echo $date ?>" class="rateDate" />
 
                             <div class="rptf" align="center">
                                 <input type="text" class="raterName" placeholder="Enter your name..." />
@@ -131,10 +160,18 @@
 
                 <div class="bri">
                     <div class="uscm">
+
+                    <?php
+                        $sqlp = "SELECT * FROM rate";
+                        $resultp = $conn -> query($sqlp);
+                        if(mysqli_num_rows($resultp) > 0) {
+                            while($row = $resultp -> fetch_assoc()) {
+                       ?>
+
                         <div class="uscm-secs">
 
                             <div class="us-img">
-                                <p>B</p>
+                                <p><?= substr($row['userName'], 0, 1); ?></p>
                             </div>
 
                             <div class="uscms">
@@ -144,25 +181,31 @@
                                             <div class="clearfix rating marT8">
                                                 <div class="rating-stars">
                                                     <div class="grey-stars"> </div>
-                                                    <div class="filled-stars" style="width: 60%"></div>
+                                                    <div class="filled-stars" style="width: <?= $row['userReview'] * 20 ?>%"></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="us-cmt">
-                                    <p>He is the best gardener</p>
+                                    <p><?= $row['userMessage'] ?></p>
                                 </div>
                                 <div class="us-nm">
                                     <p>
                                         <i>By
-                                            <span class="cmnm">Bright</span> on
-                                            <span class="cmdt"> 23 december, 2020</span>
+                                            <span class="cmnm"><?= $row['userName'] ?></span> on
+                                            <span class="cmdt"> <?= $row['dateReviewed'] ?></span>
                                         </i>
                                     </p>
                                 </div>
                             </div>
                         </div>
+                        <?php 
+                                }
+                            }
+
+                            ?>
+
                     </div>
                 </div>
             </section>
